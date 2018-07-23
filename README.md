@@ -2,7 +2,7 @@
 
 ### Requirements
 
-Docker [![Install](https://docs.docker.com/install/)]
+Docker [Install](https://docs.docker.com/install/)
 
 ### Installation
 
@@ -12,9 +12,19 @@ docker-compose up -d
 
 ### Endpoints
 
-#### / (show it works)
-#### /nick/{username} - Show profiles of Github/Bitbucket
-
 Access: http://localhost:8080/
+
+#### / 
+
+Show message
+
+#### /nick/{username} 
+
+Show profiles of Github/Bitbucket
+
+
+##### Credits
+
+To change configuration, maybe change ./conf/krakend.json
 
 ### Enjoy!
