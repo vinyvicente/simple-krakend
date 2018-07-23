@@ -1,0 +1,16 @@
+version: "2"
+services:
+  faker_api:
+    image: jaxgeller/lwan
+    volumes:
+      - ./ping:/lwan/wwwroot
+    ports:
+      - "8000:8080"
+  gateway:
+    image: devopsfaith/krakend
+    volumes:
+      - ./conf:/etc/krakend
+    ports:
+      - "8080:8080"
+    links:
+          - faker_api
